@@ -1,5 +1,7 @@
 package com.myproject.controller;
 
+import java.util.ArrayList;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Controller;
@@ -68,11 +70,12 @@ public class MainController {
 	}
 	
 	@RequestMapping(value = "/showEmployees")
-	public ModelAndView showEmployees() {
+	public ModelAndView showEmployees() throws ClassNotFoundException {
 		empDao=new EmployeeDAO();
-		
+		ArrayList<Employee> employeeList=new ArrayList<>();
+		employeeList=empDao.getAllEmployees();		
 		ModelAndView modelAndView = new ModelAndView("showEmployeePage");
-	    modelAndView.addObject("employeeList", "Baeldung");
+	    modelAndView.addObject("employeeList",employeeList);
 	    return modelAndView;
 		
 	}

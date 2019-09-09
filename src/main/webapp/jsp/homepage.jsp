@@ -10,6 +10,6 @@
 <H1>Hi , Welcome to student registration page</H1>
 <br>
 <a href="add">ADD EMPLOYEE</a></br>
-<a href="show">SHOW EMPLOYEE</a>
+<a href="showEmployees">SHOW EMPLOYEE</a>
 </body>
 </html>

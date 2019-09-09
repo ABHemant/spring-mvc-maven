@@ -70,4 +70,21 @@ public class EmployeeDAO {
 	    }  
 	 
 	 
+	/* public static void main(String[] args) throws ClassNotFoundException {  
+	   
+	 EmployeeDAO employeedao = new EmployeeDAO();
+     ArrayList<Employee> employeeList=new ArrayList<>();
+     employeeList = employeedao.getAllEmployees();
+     System.out.println(employeeList.size());
+     
+     
+    for (Employee employee : employeeList) {
+    	System.out.println(employee);
+	}
+     
+     
+   
+ }*/
+ 
+	 
 }
